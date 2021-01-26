@@ -7,6 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@webzlodimir/vue-bottom-sheet": "^1.0.8",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
