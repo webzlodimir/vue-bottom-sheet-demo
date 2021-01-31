@@ -4,15 +4,16 @@
       <h1>
         Vue Bottom Sheet
       </h1>
+      <div class="mt-3 mb-3">
+        <github-button href="https://github.com/webzlodimir/vue-bottom-sheet" data-size="large" data-show-count="true" aria-label="Star webzlodimir/vue-bottom-sheet on GitHub">Star on Github</github-button>
+      </div>
       <p>
-        A swipeable bottom sheet component for
-        <a target="_blank" href="https://vuejs.org/">Vue.js</a> created with
-        <a target="_blank" href="https://hammerjs.github.io/">Hammer.js</a>
+        A nice clean and touch-friendly bottom sheet component based on <a target="_blank" href="https://vuejs.org/">Vue.js</a> and <a target="_blank" href="https://hammerjs.github.io/">Hammer.js</a>
       </p>
       <h3 class="mb-3">Settings</h3>
 
       <div class="row">
-        <div class="col-4">
+        <div class="col-sm-4 col-12">
           <div class="form-check form-switch mb-3">
             <input
                 class="form-check-input"
@@ -25,12 +26,34 @@
             >Overlay</label
             >
           </div>
+          <div class="form-check form-switch mb-3">
+            <input
+                class="form-check-input"
+                type="checkbox"
+                id="closeSwitchCheckChecked"
+                v-model="clickToClose"
+                checked
+            />
+            <label class="form-check-label" for="closeSwitchCheckChecked"
+            >Click outside card to close</label
+            >
+          </div>
           <div class="form-group mb-3">
             <label for="maxWidthInput" class="form-label">Max width:</label>
             <input
                 name="maxWidthInput"
                 id="maxWidthInput"
                 v-model="maxWidth"
+                type="text"
+                class="form-control"
+            />
+          </div>
+          <div class="form-group mb-3">
+            <label for="maxHeightInput" class="form-label">Max height:</label>
+            <input
+                name="maxHeightInput"
+                id="maxHeightInput"
+                v-model="maxHeight"
                 type="text"
                 class="form-control"
             />
@@ -42,30 +65,26 @@
       </button>
       <vue-bottom-sheet
           :max-width="maxWidth"
+          :max-height="maxHeight"
           :overlay="overlay"
+          :click-to-close="clickToClose"
           ref="myBottomSheet"
       >
-        <div class="sheet-content">
-          <h1>Lorem Ipsum</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
-            neque sed tempore ullam. Accusamus animi at autem beatae est, hic
-            inventore iste minima, non quibusdam quisquam quos velit veritatis
-            voluptatem?
-          </p>
-          <h2>
-            Lorem Ipsum
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-            excepturi explicabo id illum magnam possimus provident quae
-            recusandae rerum tempore. Ab adipisci beatae, distinctio ea nemo
-            omnis sed similique veniam.
-          </p>
-          <button type="button" class="btn btn-danger" @click="close">
-            Close
-          </button>
-        </div>
+        test
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        test
       </vue-bottom-sheet>
     </div>
   </div>
@@ -73,17 +92,20 @@
 
 <script>
 import VueBottomSheet from '@webzlodimir/vue-bottom-sheet'
-
+import GithubButton from 'vue-github-button'
 export default {
   name: 'App',
   data() {
     return {
       overlay: true,
-      maxWidth: 640
+      maxWidth: '640px',
+      maxHeight: '90%',
+      clickToClose: true
     };
   },
   components: {
-    VueBottomSheet
+    VueBottomSheet,
+    GithubButton
   },
   methods: {
     open() {
@@ -98,6 +120,6 @@ export default {
 
 <style>
 .sheet-content {
-  padding: 20px;
+  padding: 0 20px;
 }
 </style>

@@ -1492,10 +1492,10 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
-"@webzlodimir/vue-bottom-sheet@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@webzlodimir/vue-bottom-sheet/-/vue-bottom-sheet-1.0.8.tgz#ff2c7401bfedab77e2f04a852eadffe23932e277"
-  integrity sha512-EZTg6BBVBnd2jWdg7Bjhy7VbuDIK+sLEkO4no2w48j5QveCbNGZEJ+V0ctpKBLw4BLBgye4GCoERq5uqTfQZhg==
+"@webzlodimir/vue-bottom-sheet@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@webzlodimir/vue-bottom-sheet/-/vue-bottom-sheet-1.1.1.tgz#4a0b592c06fb61760aaafed621edaa6b781cb1bf"
+  integrity sha512-Ow9tckfieiVWpVZvO4COD8GmZ6oSEtRKUifUKuYmjQybv4uP/twZBcQLRkYs0/6HHJEMm+QI2d7ukW3j6HlFcQ==
   dependencies:
     hammerjs "^2.0.8"
 
@@ -3738,6 +3738,11 @@ getpass@^0.1.1:
   integrity sha1-Xv+OPmhNVprkyysSgmBOi6YhSfo=
   dependencies:
     assert-plus "^1.0.0"
+
+github-buttons@^2.8.0:
+  version "2.14.1"
+  resolved "https://registry.yarnpkg.com/github-buttons/-/github-buttons-2.14.1.tgz#56177245e328892949dd59af58c6a7b6c530ad14"
+  integrity sha512-ODvmvylJZPn2Rg/OYRwQcGhIi1gWJ3ZpfkaFUMiBYAZtQQUNTPM7ka5iP+mn5J+DBicvgR24M2GV6QqB0M4zPQ==
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -7542,6 +7547,13 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
+
+vue-github-button@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/vue-github-button/-/vue-github-button-1.3.0.tgz#a4da317a3b93d05824768b3916a0d22fa91603be"
+  integrity sha512-Cc92t+GBLwBPhwtHSvKXjbx07U3+6xdi+eR+s9c734tHbndipCLenJjLVkgErNhKZ0EvDjRyuu8Hu69gg9/TxQ==
+  dependencies:
+    github-buttons "^2.8.0"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
