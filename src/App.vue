@@ -58,6 +58,24 @@
                 class="form-control"
             />
           </div>
+          <div class="form-group mb-3">
+            <label for="effectSelect" class="form-label">Effects:</label>
+            <select
+                v-model="effect"
+                class="form-select"
+                name="effectSelect"
+                id="effectSelect"
+            >
+              <option selected value="fx-default">fx-default</option>
+              <option selected value="fx-fadein-scale">fx-fadein-scale</option>
+              <option selected value="fx-slide-from-right"
+              >fx-slide-from-right</option
+              >
+              <option selected value="fx-slide-from-left"
+              >fx-slide-from-left</option
+              >
+            </select>
+          </div>
         </div>
       </div>
       <button class="btn btn-primary" type="button" @click="open">
@@ -68,23 +86,30 @@
           :max-height="maxHeight"
           :overlay="overlay"
           :click-to-close="clickToClose"
+          :effect="effect"
           ref="myBottomSheet"
       >
-        test
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        test
+        <div class="sheet-content">
+          <h1>Lorem Ipsum</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+            neque sed tempore ullam. Accusamus animi at autem beatae est, hic
+            inventore iste minima, non quibusdam quisquam quos velit veritatis
+            voluptatem?
+          </p>
+          <h2>
+            Lorem Ipsum
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+            excepturi explicabo id illum magnam possimus provident quae
+            recusandae rerum tempore. Ab adipisci beatae, distinctio ea nemo
+            omnis sed similique veniam.
+          </p>
+          <button type="button" class="btn btn-danger" @click="close">
+            Close
+          </button>
+        </div>
       </vue-bottom-sheet>
     </div>
   </div>
@@ -100,7 +125,8 @@ export default {
       overlay: true,
       maxWidth: '640px',
       maxHeight: '90%',
-      clickToClose: true
+      clickToClose: true,
+      effect: "fx-default"
     };
   },
   components: {
@@ -120,6 +146,6 @@ export default {
 
 <style>
 .sheet-content {
-  padding: 0 20px;
+  padding: 20px;
 }
 </style>
