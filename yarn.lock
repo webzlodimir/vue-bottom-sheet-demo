@@ -1492,10 +1492,10 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
-"@webzlodimir/vue-bottom-sheet@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@webzlodimir/vue-bottom-sheet/-/vue-bottom-sheet-1.1.3.tgz#4e62223c49a04f942ab67395367705d8b0beaf46"
-  integrity sha512-LEhLKAUyFhMlZ5P4OFJNNAx09EWShtwFxU9D61gJb2AQNOQa8h65PfoCHOalR5zLaPCVDBGQ97ogXLDFepE6Lg==
+"@webzlodimir/vue-bottom-sheet@^1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@webzlodimir/vue-bottom-sheet/-/vue-bottom-sheet-1.1.6.tgz#9616a4cc0cb55543f4a08019479c0e1ea525d9f0"
+  integrity sha512-k6LEPs5iPu4V1MdTFLFLVhcYxTplySLGxCdmF21Eu616iPoPTf07nMD+3dgHl66T4XA+rqtBmOytMgSGhadFXA==
   dependencies:
     hammerjs "^2.0.8"
 
