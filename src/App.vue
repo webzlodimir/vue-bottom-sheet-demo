@@ -38,6 +38,18 @@
             >Click outside card to close</label
             >
           </div>
+          <div class="form-check form-switch mb-3">
+            <input
+                class="form-check-input"
+                type="checkbox"
+                id="roundedCheckChecked"
+                v-model="rounded"
+                checked
+            />
+            <label class="form-check-label" for="roundedCheckChecked"
+            >Rounded top corners</label
+            >
+          </div>
           <div class="form-group mb-3">
             <label for="maxWidthInput" class="form-label">Max width:</label>
             <input
@@ -87,6 +99,7 @@
           :overlay="overlay"
           :click-to-close="clickToClose"
           :effect="effect"
+          :rounded="true"
           ref="myBottomSheet"
       >
         <div class="sheet-content">
@@ -126,7 +139,8 @@ export default {
       maxWidth: '640px',
       maxHeight: '90%',
       clickToClose: true,
-      effect: "fx-default"
+      effect: "fx-default",
+      rounded: true
     };
   },
   components: {
