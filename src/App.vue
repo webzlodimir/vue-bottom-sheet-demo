@@ -99,7 +99,7 @@
           :overlay="overlay"
           :click-to-close="clickToClose"
           :effect="effect"
-          :rounded="true"
+          :rounded="rounded"
           ref="myBottomSheet"
       >
         <div class="sheet-content">
